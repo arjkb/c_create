@@ -1,5 +1,5 @@
-$(CC)=gcc
-$(CFLAGS)=-c -g
+CC=gcc
+CFLAGS=-c -g
 
 all: foo
 
