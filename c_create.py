@@ -7,7 +7,7 @@ def createMakefile(my_filename):
     search_text = "filename"
     replace_text = my_filename
 
-    fh_makefile = open('Makefile', 'r')
+    fh_makefile = open('Makefile.template', 'r')
     makefile_data = fh_makefile.read()
     fh_makefile.close()
 
