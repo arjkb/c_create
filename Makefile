@@ -1,15 +1,15 @@
 $(CC)=gcc
 $(CFLAGS)=-c -g
 
-all: filename
+all: foo
 
-filename: filename.o
-	$(CC) -o filename filename.o
+foo: foo.o
+	$(CC) -o foo foo.o
 
-filename.o: filename.c
-	$(CC) $(CFLAGS) filename.c
+foo.o: foo.c
+	$(CC) $(CFLAGS) foo.c
 
 .PHONY: clean
 
 clean:
-	rm *.o filename
+	rm *.o foo
